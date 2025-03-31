@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "streamname",
+  "version": "${mod_version}",
+  "name": "StreamName",
+  "description": "A Minecraft Fabric server mod that marks names players, who currently stream live.",
+  "authors": [
+    "Kesuaheli"
+  ],
+  "contact": {
+    "website": "https://github.com/Kesuaheli/StreamName",
+    "repo": "https://github.com/Kesuaheli/StreamName"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "de.kesuaheli.streamname.StreamName"
+    ]
+  },
+  "mixins": [
+    "streamname.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "~${minecraft_version}",
+    "twitch4j": ">=${twitch4j_version}"
+  }
+}
